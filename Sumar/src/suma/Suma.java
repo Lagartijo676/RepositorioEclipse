@@ -13,6 +13,7 @@ public class Suma {
 		int a,b, resultado;
 		String respuesta="s";
 		
+		try {
 		Scanner teclado =new Scanner(System.in);
 		while (respuesta=="s"){
 			System.out.println("Introduce un número positivo:");
@@ -31,6 +32,9 @@ public class Suma {
 			respuesta=teclado.next();
 		}
 		teclado.close();
+		}catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
 		
 		
 	}
